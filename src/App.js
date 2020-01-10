@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Recipe from './components/recipe'
+import Recipe from './recipe'
 import './App.css';
 // import Forms from './components/From';
 
@@ -39,7 +39,7 @@ const App = () => {
         />
         <button className="search-button" onClick={getSearch} type="submit" >Search</button>
       </div>
-
+      <div className="recipes">
       {recipes.map(recipe => (
         <Recipe title={recipe.recipe.label}
           calories={recipe.recipe.calories}
@@ -50,6 +50,7 @@ const App = () => {
       )
 
       )}
+      </div>
     </div>
   )
 }

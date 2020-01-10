@@ -1,8 +1,10 @@
 import React from 'react'
 
+
+
 const Recipe = ({ title, calories, image, ingredients }) => {
     return (
-        <div>
+        <div className="recip">
             <h1>{title}</h1>
             <ol>
                 {ingredients.map(ingredient => (
@@ -10,7 +12,7 @@ const Recipe = ({ title, calories, image, ingredients }) => {
                 ))}
             </ol>
             <p>{calories}</p>
-            <img src={image} style={{ height: 500, width: 500 }} alt="im" />
+            <img className="image" src={image} alt="im" />
 
         </div>
     );
