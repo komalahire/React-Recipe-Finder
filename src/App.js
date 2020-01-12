@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Recipe from './recipe'
 import './App.css';
-// import Forms from './components/From';
 
 const App = () => {
   const APP_ID = 'f5c945fe';
